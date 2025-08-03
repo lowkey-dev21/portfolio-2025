@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import ScreenWrapper from './ScreenWrapper.astro';
+import lowkeyLogo from '../../assets/lowkey.svg';
+
+const navLinks = [
+    { name: 'About Me', href: '/' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Services', href: '/services' },
+    { name: 'Blog', href: '/blog' },
+];
+---
+
+
+<header class="fixed  top-0 left-0 z-50 w-full bg-[#f8f8f8] py-[0.5rem]">
+	<ScreenWrapper class="flex items-center justify-between px-4 sm:px-8 md:px-[6rem]">
+		<div class="flex items-center gap-[2rem]">
+			<a href="/">
+				<Image width={120} height={120} src={lowkeyLogo} alt="Lowkey Logo" />
+			</a>
+
+			<nav class="hidden md:block">
+				<ul class="flex gap-[4rem]">
+					{navLinks.map((link) => (
+						<li>
+							<a href={link.href} class="text-gray-700 hover:text-blue-500">
+								{link.name}
+							</a>
+						</li>
+					))}
+				</ul>
+			</nav>
+		</div>
+
+		<button class="text-gray-700 flex items-center underline">
+			<span class="lg:flex hidden">
+                Book A Call
+            </span>
+           <svg class="lg:flex hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+
+		   <svg class="lg:hidden " xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="M3.75 6.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75"/></svg>
+		</button>
+	</ScreenWrapper>
+</header>

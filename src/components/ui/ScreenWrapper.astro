@@ -1,0 +1,12 @@
+---
+// A reusable component to wrap content, constrain its width, and center it on the screen.
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'div'> {}
+
+const { class: className, ...rest } = Astro.props;
+---
+
+<div class:list={['w-full lg:max-w-[1500px] mx-auto', className]} {...rest}>
+	<slot />
+</div>
