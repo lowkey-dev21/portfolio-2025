@@ -1,0 +1,264 @@
+---
+import { Image } from "astro:assets";
+import ScreenWrapper from "./ui/ScreenWrapper.astro";
+---
+
+<main class="w-full lg:mt-[4rem] bg-[#f8f8f8]">
+    <ScreenWrapper class="flex flex-col mx-[2rem] lg:px-[5rem] lg:pt-[6rem] pt-[6rem]">
+        <section class="animate-on-load fade-in-up">
+            <h1 class="text-[80px] font-semibold text-[#222222] mb-8">Portfolio</h1>
+            <p class="text-[#7b7b7b] text-xl mb-12">A comprehensive showcase of my work and achievements</p>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="mb-20 animate-on-load fade-in-up">
+            <h2 class="text-3xl font-semibold text-[#222222] mb-8">Featured Projects</h2>
+            
+            <!-- Project 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm mb-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <div class="h-[300px] bg-gray-200 rounded-lg mb-6"></div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">MongoDB</span>
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Stripe</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-[#222222] mb-4">E-Commerce Platform</h3>
+                        <p class="text-[#7b7b7b] mb-6">
+                            A full-stack e-commerce solution with payment integration and inventory management. This project was built for a client in the fashion industry who needed a custom platform to sell their products online.
+                        </p>
+                        
+                        <div class="space-y-6 text-[#7b7b7b]">
+                            <div>
+                                <h4 class="font-semibold text-[#222222] mb-2">Project Overview</h4>
+                                <p>
+                                    The client needed a scalable e-commerce platform that could handle their growing inventory and provide a seamless shopping experience for their customers. The solution needed to include product management, order processing, payment integration, and customer accounts.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-[#222222] mb-2">Key Features</h4>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Responsive product catalog with filtering and search</li>
+                                    <li>Secure checkout process with Stripe integration</li>
+                                    <li>Inventory management system with real-time updates</li>
+                                    <li>Customer account management and order history</li>
+                                    <li>Admin dashboard for product and order management</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-[#222222] mb-2">Technical Details</h4>
+                                <p>
+                                    The frontend was built with React and Redux for state management, while the backend used Node.js with Express and MongoDB. The payment processing was handled by Stripe, and the platform was deployed on AWS for scalability.
+                                </p>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <a href="#" class="text-gray-700 flex items-center underline mr-6">
+                                    Visit Website
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                                </a>
+                                <a href="#" class="text-gray-700 flex items-center underline">
+                                    View Case Study
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm mb-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <div class="h-[300px] bg-gray-200 rounded-lg mb-6"></div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Astro.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">D3.js</span>
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Firebase</span>
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-[#222222] mb-4">Finance Dashboard</h3>
+                        <p class="text-[#7b7b7b] mb-6">
+                            An interactive dashboard for financial data visualization and analysis. This project was developed for a fintech startup that needed a way to visualize complex financial data for their users.
+                        </p>
+                        
+                        <div class="space-y-6 text-[#7b7b7b]">
+                            <div>
+                                <h4 class="font-semibold text-[#222222] mb-2">Project Overview</h4>
+                                <p>
+                                    The client needed a dashboard that could display complex financial data in an intuitive and interactive way. The solution needed to include various types of charts and graphs, filtering options, and the ability to export data.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-[#222222] mb-2">Key Features</h4>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Interactive charts and graphs for data visualization</li>
+                                    <li>Real-time data updates and notifications</li>
+                                    <li>Customizable dashboard with drag-and-drop widgets</li>
+                                    <li>Data filtering and sorting options</li>
+                                    <li>Export functionality for reports and data</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-[#222222] mb-2">Technical Details</h4>
+                                <p>
+                                    The dashboard was built with Astro.js and Astrox for state management, with D3.js for data visualization. Firebase was used for real-time data updates and authentication, and the UI was styled with Tailwind CSS for a clean and modern look.
+                                </p>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <a href="#" class="text-gray-700 flex items-center underline mr-6">
+                                    Visit Website
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                                </a>
+                                <a href="#" class="text-gray-700 flex items-center underline">
+                                    View Case Study
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <div class="h-[300px] bg-gray-200 rounded-lg mb-6"></div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">React Native</span>
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">GraphQL</span>
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">AWS</span>
+                            <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Node.js</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-[#222222] mb-4">Health & Fitness App</h3>
+                        <p class="text-[#7b7b7b] mb-6">
+                            A mobile application for tracking workouts, nutrition, and health metrics. This project was developed for a health and wellness company that wanted to provide their customers with a comprehensive fitness tracking solution.
+                        </p>
+                        
+                        <div class="space-y-6 text-[#7b7b7b]">
+                            <div>
+                                <h4 class="font-semibold text-[#222222] mb-2">Project Overview</h4>
+                                <p>
+                                    The client needed a mobile app that could help users track their fitness journey, including workouts, nutrition, and health metrics. The solution needed to be user-friendly, visually appealing, and provide valuable insights to users.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-[#222222] mb-2">Key Features</h4>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Workout tracking with custom routines and exercises</li>
+                                    <li>Nutrition tracking with calorie and macronutrient calculations</li>
+                                    <li>Health metrics tracking (weight, body measurements, etc.)</li>
+                                    <li>Progress visualization with charts and graphs</li>
+                                    <li>Social features for sharing achievements and connecting with friends</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold text-[#222222] mb-2">Technical Details</h4>
+                                <p>
+                                    The app was built with React Native for cross-platform compatibility, with a GraphQL API for efficient data fetching. The backend was built with Node.js and deployed on AWS, with a PostgreSQL database for data storage.
+                                </p>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <a href="#" class="text-gray-700 flex items-center underline mr-6">
+                                    App Store
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                                </a>
+                                <a href="#" class="text-gray-700 flex items-center underline">
+                                    Google Play
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Projects -->
+        <section class="mb-20 animate-on-load fade-in-up">
+            <h2 class="text-3xl font-semibold text-[#222222] mb-8">Other Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
+                    <div class="h-[200px] bg-gray-200 rounded-lg mb-4"></div>
+                    <h3 class="text-xl font-semibold text-[#222222] mb-2">Educational Platform</h3>
+                    <p class="text-[#7b7b7b] mb-4">An online learning platform with course management, video lessons, and progress tracking.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">React</span>
+                        <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Django</span>
+                        <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">PostgreSQL</span>
+                    </div>
+                    <a href="#" class="text-gray-700 flex items-center underline">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                    </a>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
+                    <div class="h-[200px] bg-gray-200 rounded-lg mb-4"></div>
+                    <h3 class="text-xl font-semibold text-[#222222] mb-2">Real Estate Marketplace</h3>
+                    <p class="text-[#7b7b7b] mb-4">A platform for buying, selling, and renting properties with advanced search and filtering.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Next.js</span>
+                        <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Node.js</span>
+                        <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">MongoDB</span>
+                    </div>
+                    <a href="#" class="text-gray-700 flex items-center underline">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                    </a>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all">
+                    <div class="h-[200px] bg-gray-200 rounded-lg mb-4"></div>
+                    <h3 class="text-xl font-semibold text-[#222222] mb-2">Social Media Dashboard</h3>
+                    <p class="text-[#7b7b7b] mb-4">A dashboard for managing and analyzing social media accounts across multiple platforms.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Astro.js</span>
+                        <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Express</span>
+                        <span class="px-3 py-1 bg-gray-100 text-[#7b7b7b] text-sm rounded-full">Firebase</span>
+                    </div>
+                    <a href="#" class="text-gray-700 flex items-center underline">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex justify-center mb-16 animate-on-load fade-in-up">
+            <a href="/about" class="text-gray-700 flex items-center underline mr-8">
+                Learn About Me
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+            </a>
+            <a href="/services" class="text-gray-700 flex items-center underline">
+                Explore My Services
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+            </a>
+        </section>
+    </ScreenWrapper>
+</main>

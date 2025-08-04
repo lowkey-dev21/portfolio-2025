@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import ScreenWrapper from "./ui/ScreenWrapper.astro";
+import lowkey from "../assets/lowkey.png"
+---
+
+<main class="w-full lg:mt-[4rem] bg-[#f8f8f8]">
+<ScreenWrapper class="flex mx-[2rem] lg:flex-row flex-col lg:h-[800px] lg:items-center lg:justify-between lg:px-[5rem] lg:pt-[6rem]">
+    <section class="lg:w-1/2 lg:gap-[5rem] justify-center w-[80%] mx-auto flex h-[500px] lg:h-[800px] gap-[rem] pt-[3rem] flex-row lg:items-start lg:justify-between">
+        <div class="lg:h-[800px] hidden lg:flex flex-col justify-center text-[#7b7b7b] items-center w-[1px] lg:w-[10px] gap-4 animate-on-load fade-in">
+            <p class="-rotate-90 whitespace-nowrap mb-[4rem]">Full Stack Developer</p>
+            <div class="h-[50%] flex flex-col justify-center mt-2 bg-[#7b7b7b] items-center w-[1px]"/>
+            <p class="-rotate-90 whitespace-nowrap">2025</p>
+        </div>
+
+        <div class="flex h-[90%] pt-[3rem] flex-col items-start lg:justify-between">
+            <div class="flex justify-center ml-8 lg:ml-0 items-center gap-[2rem]">
+                <div class="flex flex-col animate-on-load fade-in-up">
+                    <span class="lg:text-7xl text-5xl font-thin">+10</span>
+                    <small class="lg:ml-8">Project completed</small>
+                </div>
+
+                <div class="flex flex-col animate-on-load fade-in-up delay-200">
+                    <span class="lg:text-7xl text-5xl font-thin">+5</span>
+                    <small class="lg:ml-8">Startup raised</small>
+                </div>
+            </div>
+
+            <div class="text-[#222222] px-[2rem]">
+                <h1 class="lg:text-[180px] text-[150px] lg:-mt-[6rem] -mb-[3rem] font-semibold animate-on-load fade-in-up delay-400">
+                    Hello
+                </h1>
+                <small class="text-2xl animate-on-load fade-in-up delay-600">
+                    -- It's Lowkey, a web developer wizard
+                </small>
+
+                <div class="mt-8 max-w-lg animate-on-load fade-in-up delay-700">
+                    <p class="text-[#7b7b7b] mb-4">
+                        I'm a passionate full-stack developer with a love for creating beautiful, functional websites and applications. My journey began during my college years and has evolved into a career building digital experiences that blend creativity with functionality.
+                    </p>
+                    <a href="/about" class="text-gray-700 flex items-center underline">
+                        Learn More About Me
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                    </a>
+                </div>
+
+                <div class="flex lg:hidden text-sm mt-[3rem] justify-center text-[#7b7b7b] items-center w-full gap-[1rem] animate-on-load fade-in">
+                    <p>2025</p>
+                    <div class="w-[50px] flex flex-col justify-center mt-2 bg-[#7b7b7b] items-center h-[1px]"/>
+                    <p>Full Stack Developer</p>
+                    <div class="w-[50px] flex flex-col justify-center mt-2 bg-[#7b7b7b] items-center h-[1px]"/>
+                    <p>2025</p>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center underline animate-on-load fade-in-up delay-800">
+                <button class="-mb-3">
+                    Scroll Down
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8 18l4 4m0 0l4-4m-4 4V2"/></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase two -->
+    <section class="w-full lg:block animate-on-load fade-in">
+        <Image src={lowkey} alt="Lowkey Image" class="lg:h-[650px] mx-auto lg:mt-0 mt-[13rem] h-[500px] w-full md:h-[650px] md:w-[500px] lg:w-[1700px] object-cover" />
+    </section>
+</ScreenWrapper>
+</main>

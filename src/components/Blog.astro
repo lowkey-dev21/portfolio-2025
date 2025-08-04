@@ -1,0 +1,100 @@
+---
+import { Image } from "astro:assets";
+import ScreenWrapper from "./ui/ScreenWrapper.astro";
+---
+
+<main class="w-full lg:mt-[4rem] bg-[#f8f8f8]">
+    <ScreenWrapper class="flex flex-col mx-[2rem] lg:px-[5rem] lg:pt-[6rem] pt-[6rem]">
+        <section class="animate-on-load fade-in-up">
+            <h1 class="text-[80px] font-semibold text-[#222222] mb-8">Blog</h1>
+            <p class="text-[#7b7b7b] text-xl mb-12">Insights, tutorials, and thoughts on web development</p>
+        </section>
+
+        <section class="mb-16">
+            <!-- Featured Post -->
+            <div class="bg-white p-8 rounded-lg shadow-sm mb-12 animate-on-load fade-in-up">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="lg:w-1/2">
+                        <div class="h-[300px] bg-gray-200 rounded-lg mb-4"></div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <span class="text-blue-500 font-medium mb-2 block">FEATURED POST</span>
+                        <h2 class="text-3xl font-semibold text-[#222222] mb-4">The Future of Web Development: Trends to Watch in 2025</h2>
+                        <p class="text-[#7b7b7b] mb-4">Explore the emerging technologies and methodologies that will shape the future of web development. From AI-driven interfaces to new frameworks that prioritize performance and accessibility.</p>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+                            <div>
+                                <p class="text-[#222222] font-medium">Lowkey Dev</p>
+                                <p class="text-[#7b7b7b] text-sm">April 15, 2025 • 8 min read</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-gray-700 flex items-center underline">
+                            Read Article
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Posts -->
+            <h3 class="text-2xl font-semibold text-[#222222] mb-8 animate-on-load fade-in-up">Recent Articles</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Post 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all animate-on-load fade-in-up">
+                    <div class="h-[200px] bg-gray-200 rounded-lg mb-4"></div>
+                    <span class="text-[#7b7b7b] text-sm mb-2 block">March 28, 2025</span>
+                    <h3 class="text-xl font-semibold text-[#222222] mb-2">Optimizing React Applications for Performance</h3>
+                    <p class="text-[#7b7b7b] mb-4">Learn practical techniques to improve the performance of your React applications, from code splitting to memoization.</p>
+                    <a href="#" class="text-gray-700 flex items-center underline">
+                        Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                    </a>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all animate-on-load fade-in-up delay-200">
+                    <div class="h-[200px] bg-gray-200 rounded-lg mb-4"></div>
+                    <span class="text-[#7b7b7b] text-sm mb-2 block">March 15, 2025</span>
+                    <h3 class="text-xl font-semibold text-[#222222] mb-2">Building Accessible Web Applications</h3>
+                    <p class="text-[#7b7b7b] mb-4">A comprehensive guide to creating web applications that are accessible to all users, including those with disabilities.</p>
+                    <a href="#" class="text-gray-700 flex items-center underline">
+                        Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                    </a>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all animate-on-load fade-in-up delay-400">
+                    <div class="h-[200px] bg-gray-200 rounded-lg mb-4"></div>
+                    <span class="text-[#7b7b7b] text-sm mb-2 block">March 5, 2025</span>
+                    <h3 class="text-xl font-semibold text-[#222222] mb-2">Getting Started with TypeScript in 2025</h3>
+                    <p class="text-[#7b7b7b] mb-4">A beginner-friendly introduction to TypeScript and how it can improve your JavaScript development workflow.</p>
+                    <a href="#" class="text-gray-700 flex items-center underline">
+                        Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="mb-16 animate-on-load fade-in-up delay-600">
+            <h3 class="text-2xl font-semibold text-[#222222] mb-8">Categories</h3>
+            <div class="flex flex-wrap gap-4">
+                <a href="#" class="px-4 py-2 bg-white text-[#7b7b7b] rounded-full hover:bg-gray-100 transition-all">Frontend Development</a>
+                <a href="#" class="px-4 py-2 bg-white text-[#7b7b7b] rounded-full hover:bg-gray-100 transition-all">Backend Development</a>
+                <a href="#" class="px-4 py-2 bg-white text-[#7b7b7b] rounded-full hover:bg-gray-100 transition-all">UI/UX Design</a>
+                <a href="#" class="px-4 py-2 bg-white text-[#7b7b7b] rounded-full hover:bg-gray-100 transition-all">DevOps</a>
+                <a href="#" class="px-4 py-2 bg-white text-[#7b7b7b] rounded-full hover:bg-gray-100 transition-all">Career Advice</a>
+                <a href="#" class="px-4 py-2 bg-white text-[#7b7b7b] rounded-full hover:bg-gray-100 transition-all">Tutorials</a>
+            </div>
+        </section>
+
+        <section class="flex justify-center mb-16 animate-on-load fade-in-up delay-800">
+            <button class="text-gray-700 flex items-center underline">
+                View All Articles
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+            </button>
+        </section>
+    </ScreenWrapper>
+</main>
