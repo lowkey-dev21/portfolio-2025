@@ -3,12 +3,15 @@ import { Image } from 'astro:assets';
 import ScreenWrapper from './ScreenWrapper.astro';
 import lowkeyLogo from '../../assets/lowkey.svg';
 
+const { pathname } = Astro.url
 const navLinks = [
-    { name: 'About Me', href: '/' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Services', href: '/services' },
-    { name: 'Blog', href: '/blog' },
+	{name: "Home", href: "/"}	,
+	{ name: 'About Me', href: '/about' },
+	{ name: 'Portfolio', href: '/portfolio' },
+	{ name: 'Services', href: '/services' },
+	{ name: 'Blog', href: '/blog' },
 ];
+
 ---
 
 
@@ -23,7 +26,7 @@ const navLinks = [
 				<ul class="flex gap-[4rem]">
 					{navLinks.map((link) => (
 						<li>
-							<a href={link.href} class="text-gray-700 hover:text-blue-500">
+							<a href={link.href} class={`${(pathname === link.href || (link.href === '/' && (pathname === '' || pathname === '/'))) ? 'text-blue-500' : 'text-gray-700'} md:hidden lg:flex hover:text-blue-500`}>
 								{link.name}
 							</a>
 						</li>
@@ -36,9 +39,14 @@ const navLinks = [
 			<span class="lg:flex hidden">
                 Book A Call
             </span>
-           <svg class="lg:flex hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+			<svg class="lg:flex hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
 
-		   <svg class="lg:hidden " xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="M3.75 6.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75"/></svg>
+			<svg class="lg:hidden " xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="M3.75 6.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75"/></svg>
 		</button>
 	</ScreenWrapper>
 </header>
+
+
+
+
+

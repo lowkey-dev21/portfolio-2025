@@ -1,0 +1,126 @@
+---
+import { Image } from "astro:assets";
+import ScreenWrapper from "./ui/ScreenWrapper.astro";
+import lowkey from "../assets/lowkey.png";
+---
+
+<main class="w-full lg:mt-[4rem] bg-[#f8f8f8]">
+    <ScreenWrapper class="flex flex-col mx-[2rem] lg:px-[5rem] lg:pt-[6rem] pt-[6rem]">
+        <section class="animate-on-load fade-in-up">
+            <h1 class="text-[80px] font-semibold text-[#222222] mb-8">About Me</h1>
+            <p class="text-[#7b7b7b] text-xl mb-12">The journey of a passionate web developer</p>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div class="animate-on-load fade-in-up">
+                <Image src={lowkey} alt="Lowkey Image" class="rounded-lg w-full h-auto object-cover" />
+            </div>
+            
+            <div class="animate-on-load fade-in-up delay-200">
+                <h2 class="text-3xl font-semibold text-[#222222] mb-6">My Journey</h2>
+                
+                <div class="space-y-6 text-[#7b7b7b]">
+                    <p>
+                        My journey into web development began during my college years when I stumbled upon HTML and CSS while working on a project. What started as a curiosity quickly evolved into a passion as I discovered the power of creating interactive experiences on the web.
+                    </p>
+                    
+                    <p>
+                        After earning my National Certificate in Education (NCE) specializing in Adult Education and Non-Formal Education, I joined a startup where I had the opportunity to work on diverse projects and technologies. This experience was invaluable as it allowed me to develop a holistic understanding of the web development ecosystem.
+                    </p>
+                    
+                    <p>
+                        Over the years, I've had the privilege of working with various clients and companies, from small businesses to large enterprises. Each project has taught me something new and helped me refine my skills and approach to problem-solving.
+                    </p>
+                    
+                    <p>
+                        Today, I specialize in building modern, responsive, and accessible web applications using the latest technologies and best practices. My goal is to create digital experiences that not only look great but also provide real value to users.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 animate-on-load fade-in-up delay-400">
+            <h2 class="text-3xl font-semibold text-[#222222] mb-6">Skills & Expertise</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Frontend Development</h3>
+                    <ul class="space-y-2 text-[#7b7b7b]">
+                        <li>• HTML, CSS, JavaScript, TypeScript</li>
+                        <li>• React, NextJs, AstroJs, SolidJs</li>
+                        <li>• Responsive Design</li>
+                        <li>• UI/UX Principles</li>
+                        <li>• Performance Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Backend Development</h3>
+                    <ul class="space-y-2 text-[#7b7b7b]">
+                        <li>• Node.js, Express</li>
+                        <li>• Python, Django</li>
+                        <li>• RESTful APIs</li>
+                        <li>• Database Design</li>
+                        <li>• Authentication & Security</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Tools & Technologies</h3>
+                    <ul class="space-y-2 text-[#7b7b7b]">
+                        <li>• Git, GitHub</li>
+                        <li>• Docker, Kubernetes</li>
+                        <li>• AWS, Firebase</li>
+                        <li>• CI/CD Pipelines</li>
+                        <li>• Testing Frameworks</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 animate-on-load fade-in-up delay-600">
+            <h2 class="text-3xl font-semibold text-[#222222] mb-6">My Approach</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">User-Centered Design</h3>
+                    <p class="text-[#7b7b7b]">
+                        I believe that great web experiences start with understanding the users' needs and goals. By putting users at the center of the design process, I create solutions that are intuitive, accessible, and enjoyable to use.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Continuous Learning</h3>
+                    <p class="text-[#7b7b7b]">
+                        The web development landscape is constantly evolving, and I'm committed to staying up-to-date with the latest technologies, tools, and best practices. This allows me to deliver cutting-edge solutions that meet modern standards.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Collaborative Process</h3>
+                    <p class="text-[#7b7b7b]">
+                        I believe in the power of collaboration and open communication. By working closely with clients and team members, I ensure that projects are aligned with business goals and delivered on time and within budget.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Quality & Performance</h3>
+                    <p class="text-[#7b7b7b]">
+                        I'm committed to delivering high-quality code that is maintainable, scalable, and performant. By following best practices and industry standards, I create solutions that stand the test of time.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex justify-center mb-16 animate-on-load fade-in-up delay-800">
+            <a href="/portfolio" class="text-gray-700 flex items-center underline mr-8">
+                View My Portfolio
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+            </a>
+            <a href="/services" class="text-gray-700 flex items-center underline">
+                Explore My Services
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+            </a>
+        </section>
+    </ScreenWrapper>
+</main>

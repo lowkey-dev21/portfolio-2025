@@ -1,0 +1,122 @@
+---
+import { Image } from "astro:assets";
+import ScreenWrapper from "./ui/ScreenWrapper.astro";
+---
+
+<main class="w-full lg:mt-[4rem] bg-[#f8f8f8]">
+    <ScreenWrapper class="flex flex-col mx-[2rem] lg:px-[5rem] lg:pt-[6rem] pt-[6rem]">
+        <section class="animate-on-load fade-in-up">
+            <h1 class="text-[80px] font-semibold text-[#222222] mb-8">Services</h1>
+            <p class="text-[#7b7b7b] text-xl mb-12">Expert solutions to bring your digital vision to life</p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            <!-- Service 1 -->
+            <div class="animate-on-load fade-in-up">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M13 19c0 .7.13 1.37.35 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v8.35c-.63-.22-1.3-.35-2-.35zM10 12v2H6v-2zm0-4v2H6V8zm6 0v2h-4V8z"/><path fill="currentColor" d="M20 18v-3h-2v3h-3v2h3v3h2v-3h3v-2z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-[#222222]">Web Development</h3>
+                </div>
+                <p class="text-[#7b7b7b] mb-4 pl-16">Custom websites and web applications built with modern technologies and best practices. From simple landing pages to complex web platforms.</p>
+                <ul class="pl-16 mb-4 text-[#7b7b7b]">
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        Responsive design for all devices
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        Performance optimization
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        SEO-friendly implementation
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="animate-on-load fade-in-up delay-200">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7 22v-16h14v7.543c0 4.107-6 2.457-6 2.457s1.518 6-2.638 6zm2-14v12h2.189c-.24-.36-.395-.712-.464-1.061c-.473-2.355 1.602-4.5 4.615-4.5c.235 0 .464.019.689.048V8zm10 0h-8v2h8zm0 4h-8v2h8z"/><path fill="currentColor" d="M1 7h4v16H1z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-[#222222]">UI/UX Design</h3>
+                </div>
+                <p class="text-[#7b7b7b] mb-4 pl-16">User-centered design that creates intuitive and engaging experiences. From wireframes to high-fidelity prototypes and design systems.</p>
+                <ul class="pl-16 mb-4 text-[#7b7b7b]">
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        User research and testing
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        Wireframing and prototyping
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        Visual design and branding
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="animate-on-load fade-in-up delay-400">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 18.178l-4.62-1.256l-.328-3.544h2.27l.158 1.844l2.52.667l2.52-.667l.26-2.866H6.96l-.635-6.678h11.35l-.227 2.21H8.822l.204 2.256h8.217l-.624 6.778z"/><path fill="currentColor" d="M3 2h18l-1.623 18L12 22l-7.377-2zM5.188 4l1.437 16.056L12 21.145l5.375-1.09L18.812 4z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-[#222222]">Frontend Development</h3>
+                </div>
+                <p class="text-[#7b7b7b] mb-4 pl-16">Modern, responsive, and accessible frontend implementations using the latest frameworks and technologies.</p>
+                <ul class="pl-16 mb-4 text-[#7b7b7b]">
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        React, Astro, and Angular expertise
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        State management solutions
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        Responsive and accessible interfaces
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="animate-on-load fade-in-up delay-600">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-5 14H4v-4h11zm0-5H4V9h11zm5 5h-4V9h4z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-[#222222]">Backend Development</h3>
+                </div>
+                <p class="text-[#7b7b7b] mb-4 pl-16">Robust and scalable backend solutions that power your applications. From APIs to databases and server infrastructure.</p>
+                <ul class="pl-16 mb-4 text-[#7b7b7b]">
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        RESTful and GraphQL APIs
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        Database design and optimization
+                    </li>
+                    <li class="mb-2 flex items-center">
+                        <span class="mr-2">•</span>
+                        Cloud infrastructure setup
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="flex justify-center mb-16 animate-on-load fade-in-up delay-800">
+            <button class="text-gray-700 flex items-center underline">
+                Book A Consultation
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+            </button>
+        </section>
+    </ScreenWrapper>
+</main>

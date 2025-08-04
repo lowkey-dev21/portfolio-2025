@@ -1,6 +1,8 @@
 ---
 import { AstroFont } from "astro-font";
 import '../styles/global.css';
+import Header from "../components/ui/Headers.astro";
+import Footer from "../components/ui/Footer.astro";
 ---
 
 <!doctype html>
@@ -25,8 +27,10 @@ import '../styles/global.css';
             ]}
         />
 	</head>
-	<body class="">
+	<body class="px-[1.5rem]">
+    <Header />
 		<slot />
+    <Footer/>
 	</body>
 </html>
 

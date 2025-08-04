@@ -1,0 +1,416 @@
+---
+import { Image } from "astro:assets";
+import ScreenWrapper from "./ui/ScreenWrapper.astro";
+---
+
+<main class="w-full lg:mt-[4rem] bg-[#f8f8f8]">
+    <ScreenWrapper class="flex flex-col mx-[2rem] lg:px-[5rem] lg:pt-[6rem] pt-[6rem]">
+        <section class="animate-on-load fade-in-up">
+            <h1 class="text-[80px] font-semibold text-[#222222] mb-8">Services</h1>
+            <p class="text-[#7b7b7b] text-xl mb-12">Comprehensive web development solutions tailored to your needs</p>
+        </section>
+
+        <!-- Web Development -->
+        <section class="mb-20 animate-on-load fade-in-up">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M13 19c0 .7.13 1.37.35 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v8.35c-.63-.22-1.3-.35-2-.35zM10 12v2H6v-2zm0-4v2H6V8zm6 0v2h-4V8z"/><path fill="currentColor" d="M20 18v-3h-2v3h-3v2h3v3h2v-3h3v-2z"/></svg>
+                </div>
+                <h2 class="text-3xl font-semibold text-[#222222]">Web Development</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
+                <div>
+                    <p class="text-[#7b7b7b] mb-6">
+                        I specialize in building custom websites and web applications that are tailored to your specific needs and goals. Whether you need a simple landing page or a complex web platform, I can help you bring your vision to life.
+                    </p>
+                    
+                    <p class="text-[#7b7b7b] mb-6">
+                        My web development process is focused on creating solutions that are not only visually appealing but also functional, user-friendly, and optimized for performance. I use modern technologies and best practices to ensure that your website or application is built to the highest standards.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Technologies I Work With:</h3>
+                    <ul class="grid grid-cols-2 gap-2 mb-6 text-[#7b7b7b]">
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            HTML5 & CSS3
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            JavaScript (ES6+)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            React.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Astro.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Node.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Express.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            MongoDB
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            PostgreSQL
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">What's Included:</h3>
+                    
+                    <ul class="space-y-4 text-[#7b7b7b]">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Responsive Design</strong>
+                                <p>Your website will look and function perfectly on all devices, from desktops to smartphones.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Performance Optimization</strong>
+                                <p>Fast-loading websites that provide a smooth user experience and rank better in search engines.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">SEO-Friendly Implementation</strong>
+                                <p>Built with search engine optimization in mind to help improve your visibility online.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Cross-Browser Compatibility</strong>
+                                <p>Ensuring your website works flawlessly across all major browsers.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Content Management Systems</strong>
+                                <p>Easy-to-use CMS integration so you can update your content without technical knowledge.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- UI/UX Design -->
+        <section class="mb-20 animate-on-load fade-in-up">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7 22v-16h14v7.543c0 4.107-6 2.457-6 2.457s1.518 6-2.638 6zm2-14v12h2.189c-.24-.36-.395-.712-.464-1.061c-.473-2.355 1.602-4.5 4.615-4.5c.235 0 .464.019.689.048V8zm10 0h-8v2h8zm0 4h-8v2h8z"/><path fill="currentColor" d="M1 7h4v16H1z"/></svg>
+                </div>
+                <h2 class="text-3xl font-semibold text-[#222222]">UI/UX Design</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
+                <div>
+                    <p class="text-[#7b7b7b] mb-6">
+                        Great design is about more than just aesthetics—it's about creating intuitive and engaging experiences that users love. I focus on user-centered design principles to create interfaces that are both beautiful and functional.
+                    </p>
+                    
+                    <p class="text-[#7b7b7b] mb-6">
+                        My design process begins with understanding your users and their needs, then moves through wireframing and prototyping to create high-fidelity designs that align with your brand and business goals.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Design Tools I Use:</h3>
+                    <ul class="grid grid-cols-2 gap-2 mb-6 text-[#7b7b7b]">
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Figma
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Adobe XD
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Sketch
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Photoshop
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Illustrator
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            InVision
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">What's Included:</h3>
+                    
+                    <ul class="space-y-4 text-[#7b7b7b]">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-green-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">User Research and Testing</strong>
+                                <p>Understanding your users' needs, behaviors, and pain points to inform design decisions.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-green-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Wireframing and Prototyping</strong>
+                                <p>Creating low and high-fidelity prototypes to visualize and test ideas before development.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-green-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Visual Design and Branding</strong>
+                                <p>Crafting visually appealing interfaces that align with your brand identity.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-green-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Interaction Design</strong>
+                                <p>Designing how users interact with your product to create intuitive and engaging experiences.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-green-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Design Systems</strong>
+                                <p>Creating consistent and reusable design components to ensure scalability and maintainability.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Frontend Development -->
+        <section class="mb-20 animate-on-load fade-in-up">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 18.178l-4.62-1.256l-.328-3.544h2.27l.158 1.844l2.52.667l2.52-.667l.26-2.866H6.96l-.635-6.678h11.35l-.227 2.21H8.822l.204 2.256h8.217l-.624 6.778z"/><path fill="currentColor" d="M3 2h18l-1.623 18L12 22l-7.377-2zM5.188 4l1.437 16.056L12 21.145l5.375-1.09L18.812 4z"/></svg>
+                </div>
+                <h2 class="text-3xl font-semibold text-[#222222]">Frontend Development</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
+                <div>
+                    <p class="text-[#7b7b7b] mb-6">
+                        The frontend is what users see and interact with, making it a critical component of any web project. I specialize in building modern, responsive, and accessible frontend implementations that provide exceptional user experiences.
+                    </p>
+                    
+                    <p class="text-[#7b7b7b] mb-6">
+                        Using the latest frameworks and technologies, I create frontends that are not only visually appealing but also performant, maintainable, and scalable.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Frontend Technologies:</h3>
+                    <ul class="grid grid-cols-2 gap-2 mb-6 text-[#7b7b7b]">
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            React.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Astro.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Angular
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Next.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Tailwind CSS
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            SASS/SCSS
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            TypeScript
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Redux/Astrox
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">What's Included:</h3>
+                    
+                    <ul class="space-y-4 text-[#7b7b7b]">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-purple-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Framework Expertise</strong>
+                                <p>Proficiency in React, Astro, and Angular to build robust and scalable frontend applications.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-purple-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">State Management</strong>
+                                <p>Implementing efficient state management solutions to handle complex application states.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-purple-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Responsive and Accessible Interfaces</strong>
+                                <p>Creating interfaces that work on all devices and are accessible to all users, including those with disabilities.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-purple-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Performance Optimization</strong>
+                                <p>Optimizing frontend performance for fast load times and smooth user experiences.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-purple-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Testing and Quality Assurance</strong>
+                                <p>Implementing testing strategies to ensure code quality and prevent regressions.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Backend Development -->
+        <section class="mb-20 animate-on-load fade-in-up">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-5 14H4v-4h11zm0-5H4V9h11zm5 5h-4V9h4z"/></svg>
+                </div>
+                <h2 class="text-3xl font-semibold text-[#222222]">Backend Development</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
+                <div>
+                    <p class="text-[#7b7b7b] mb-6">
+                        The backend is the engine that powers your application, handling data processing, business logic, and server-side operations. I build robust and scalable backend solutions that provide a solid foundation for your web applications.
+                    </p>
+                    
+                    <p class="text-[#7b7b7b] mb-6">
+                        From APIs to databases and server infrastructure, I create backend systems that are secure, efficient, and maintainable.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">Backend Technologies:</h3>
+                    <ul class="grid grid-cols-2 gap-2 mb-6 text-[#7b7b7b]">
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Node.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Express.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Python
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Django
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            MongoDB
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            PostgreSQL
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            Firebase
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">•</span>
+                            AWS
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-[#222222] mb-4">What's Included:</h3>
+                    
+                    <ul class="space-y-4 text-[#7b7b7b]">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-yellow-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">API Development</strong>
+                                <p>Building RESTful and GraphQL APIs that provide a seamless interface between your frontend and backend.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-yellow-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Database Design and Optimization</strong>
+                                <p>Creating efficient database schemas and optimizing queries for performance.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-yellow-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Cloud Infrastructure Setup</strong>
+                                <p>Deploying and managing your application on cloud platforms like AWS, Google Cloud, or Azure.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-yellow-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Authentication and Authorization</strong>
+                                <p>Implementing secure user authentication and authorization systems.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-yellow-500">•</span>
+                            <div>
+                                <strong class="text-[#222222]">Server-Side Rendering</strong>
+                                <p>Implementing SSR for improved performance and SEO when needed.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex justify-center mb-16 animate-on-load fade-in-up">
+            <a href="/about" class="text-gray-700 flex items-center underline mr-8">
+                Learn About Me
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+            </a>
+            <a href="/portfolio" class="text-gray-700 flex items-center underline">
+                View My Portfolio
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+            </a>
+        </section>
+    </ScreenWrapper>
+</main>
