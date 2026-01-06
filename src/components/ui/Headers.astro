@@ -11,6 +11,17 @@ const navLinks = [
 	{ name: 'Services', href: '/services' },
 	// { name: 'Blog', href: '/blog' },
 ];
+
+const isActive = (currentPath: string, href: string) => {
+    // Normalize paths by removing trailing slashes for comparison, unless it's just "/"
+    const normalize = (path: string) => {
+        if (path.length > 1 && path.endsWith('/')) {
+            return path.slice(0, -1);
+        }
+        return path;
+    };
+    return normalize(currentPath) === normalize(href);
+};
 ---
 
 <script>
@@ -45,7 +56,7 @@ close_nav.addEventListener("click", ()=>{
 				<ul class="flex gap-[4rem]">
 					{navLinks.map((link) => (
 						<li>
-							<a href={link.href} class={`${(pathname === link.href || (link.href === '/' && (pathname === '' || pathname === '/'))) ? 'text-blue-500' : 'text-gray-700'} md:hidden lg:flex hover:text-blue-500`}>
+							<a href={link.href} class={`${isActive(pathname, link.href) ? 'text-blue-500' : 'text-gray-700'} md:hidden lg:flex hover:text-blue-500`}>
 								{link.name}
 							</a>
 						</li>
@@ -75,7 +86,7 @@ close_nav.addEventListener("click", ()=>{
 				<ul class="flex flex-col gap-6">
 					{navLinks.map((link) => (
 						<li class="border-b border-gray-200 pb-4">
-							<a href={link.href} class={`${(pathname === link.href || (link.href === '/' && (pathname === '' || pathname === '/'))) ? 'text-blue-500' : 'text-gray-700'} text-xl font-medium hover:text-blue-500 flex items-center justify-between`}>
+							<a href={link.href} class={`${isActive(pathname, link.href) ? 'text-blue-500' : 'text-gray-700'} text-xl font-medium hover:text-blue-500 flex items-center justify-between`}>
 								{link.name}
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"/></svg>
 							</a>
