@@ -10,7 +10,7 @@ import lowkey from "../assets/lowkey.png"
         <div class="lg:h-[800px] hidden lg:flex flex-col justify-center text-[#7b7b7b] items-center w-[1px] lg:w-[10px] gap-4 animate-on-load fade-in">
             <p class="-rotate-90 whitespace-nowrap mb-[4rem]">Full Stack Developer</p>
             <div class="h-[50%] flex flex-col justify-center mt-2 bg-[#7b7b7b] items-center w-[1px]"/>
-            <p class="-rotate-90 whitespace-nowrap">2025</p>
+            <p class="-rotate-90 whitespace-nowrap">2026</p>
         </div>
 
         <div class="flex h-[90%] pt-[3rem] flex-col items-start lg:justify-between">
@@ -21,7 +21,7 @@ import lowkey from "../assets/lowkey.png"
                 </div>
 
                 <div class="flex flex-col animate-on-load fade-in-up delay-200">
-                    <span class="lg:text-7xl text-5xl font-thin">+5</span>
+                    <span class="lg:text-7xl text-5xl font-thin">+2</span>
                     <small class="lg:ml-8">Startup raised</small>
                 </div>
             </div>
@@ -45,20 +45,15 @@ import lowkey from "../assets/lowkey.png"
                 </div>
 
                 <div class="flex lg:hidden text-sm mt-[3rem] justify-center text-[#7b7b7b] items-center w-full gap-[1rem] animate-on-load fade-in">
-                    <p>2025</p>
+                    <p>2026</p>
                     <div class="w-[50px] flex flex-col justify-center mt-2 bg-[#7b7b7b] items-center h-[1px]"/>
                     <p>Full Stack Developer</p>
                     <div class="w-[50px] flex flex-col justify-center mt-2 bg-[#7b7b7b] items-center h-[1px]"/>
-                    <p>2025</p>
+                    <p>2026</p>
                 </div>
             </div>
 
-            <div class="hidden lg:flex items-center underline animate-on-load fade-in-up delay-800">
-                <button class="-mb-3">
-                    Scroll Down
-                </button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8 18l4 4m0 0l4-4m-4 4V2"/></svg>
-            </div>
+        
         </div>
     </section>
 
@@ -68,3 +63,21 @@ import lowkey from "../assets/lowkey.png"
     </section>
 </ScreenWrapper>
 </main>
+
+<script>
+    const scrollDownBtnAbout = document.getElementById('scroll-down-about');
+    if (scrollDownBtnAbout) {
+        scrollDownBtnAbout.addEventListener('click', () => {
+            // Find the closest top-level container of this component
+            const componentRoot = scrollDownBtnAbout.closest('main') || scrollDownBtnAbout.closest('section');
+            const nextSection = componentRoot?.nextElementSibling;
+            
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // Fallback: scroll by viewport height
+                window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+            }
+        });
+    }
+</script>
