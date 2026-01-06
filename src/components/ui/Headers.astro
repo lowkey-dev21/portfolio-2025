@@ -9,7 +9,7 @@ const navLinks = [
 	{ name: 'About Me', href: '/about' },
 	{ name: 'Portfolio', href: '/portfolio' },
 	{ name: 'Services', href: '/services' },
-	{ name: 'Blog', href: '/blog' },
+	// { name: 'Blog', href: '/blog' },
 ];
 ---
 
@@ -54,18 +54,18 @@ close_nav.addEventListener("click", ()=>{
 			</nav>
 		</div>
 
-		<button class="text-gray-700 flex items-center underline">
-		    <div class="flex items-center">
-			<span class="lg:flex hidden">
-                Book A Call
-            </span>
-			<svg class="lg:flex hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
-			</div>
+		<div class="flex items-center gap-4">
+			<a href="mailto:muizoyetola8@gmail.com" class="text-gray-700 items-center underline lg:flex hidden">
+				<span>
+					Book A Call
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5h6m0 0v6m0-6L5 19"/></svg>
+			</a>
 
-			<svg id="nav" class="lg:hidden" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="M3.75 6.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75"/></svg>
+			<svg id="nav" class="lg:hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" d="M3.75 6.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75"/></svg>
 			
-			<svg id="close_nav" class="hidden" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M6 18L18 6m0 12L6 6"/></svg>
-		</button>
+			<svg id="close_nav" class="hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M6 18L18 6m0 12L6 6"/></svg>
+		</div>
 	</ScreenWrapper>
 
 	<!-- Mobile Navigation Menu -->
@@ -82,7 +82,7 @@ close_nav.addEventListener("click", ()=>{
 						</li>
 					))}
 					<li class="pt-4">
-						<a href="#" class="text-gray-700 flex items-center justify-between text-xl font-medium hover:text-blue-500">
+						<a href="mailto:muizoyetola8@gmail.com" class="text-gray-700 flex items-center justify-between text-xl font-medium hover:text-blue-500">
 							Book A Call
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"/></svg>
 						</a>
